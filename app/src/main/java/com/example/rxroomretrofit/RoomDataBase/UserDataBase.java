@@ -8,6 +8,4 @@ public abstract class UserDataBase {
 
     public abstract UserDao userDao();
 
-    UserDataBase INSTANCE;
-    
 }
