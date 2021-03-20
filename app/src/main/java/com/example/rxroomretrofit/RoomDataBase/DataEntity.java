@@ -5,7 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "user_data")
 public class DataEntity {
 
     @PrimaryKey
@@ -17,5 +17,5 @@ public class DataEntity {
     @ColumnInfo(name = "Lname")
     String lName;
 
-    
+
 }
