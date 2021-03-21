@@ -17,8 +17,7 @@ public class DataEntity {
     @ColumnInfo(name = "Lname")
     String lName;
 
-    public DataEntity(int id, String fName, String lName) {
-        this.id = id;
+    public DataEntity(String fName, String lName) {
         this.fName = fName;
         this.lName = lName;
     }

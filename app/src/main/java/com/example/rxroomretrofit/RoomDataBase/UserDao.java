@@ -1,12 +1,9 @@
 package com.example.rxroomretrofit.RoomDataBase;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
-import androidx.room.Entity;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import io.reactivex.Completable;
 import io.reactivex.Flowable;
 
 @Dao
@@ -16,8 +13,8 @@ public interface UserDao {
     Flowable<DataEntity> getAllData();
 
     @Query("DELETE FROM user_data")
-    Flowable<DataEntity> deleteAll();
+    void deleteAll();
 
     @Insert
-    Flowable<DataEntity> insertData(DataEntity dataEntity);
+    void insertData(DataEntity dataEntity);
 }

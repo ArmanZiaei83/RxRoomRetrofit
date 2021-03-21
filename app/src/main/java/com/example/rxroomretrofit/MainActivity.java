@@ -39,7 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         intiView();
 
+        viewModel.createDataBase(this);
+        viewModel.getData();
+
         viewModel.subscriber(getData());
+
 
     }
 
